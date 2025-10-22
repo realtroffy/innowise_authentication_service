@@ -91,8 +91,6 @@ paths:
       operationId: validateToken
       security:
         - JWT: []
-      parameters:
-        - $ref: '#/components/parameters/AuthorizationHeader'
       responses:
         '200':
           description: Validation result
@@ -115,8 +113,6 @@ paths:
       operationId: refreshToken
       security:
         - JWT: []
-      parameters:
-        - $ref: '#/components/parameters/AuthorizationHeader'
       responses:
         '200':
           description: New token pair
