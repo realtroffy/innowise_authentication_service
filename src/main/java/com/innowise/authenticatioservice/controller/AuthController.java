@@ -5,7 +5,6 @@ import com.innowise.authenticatioservice.dto.RegisterRequest;
 import com.innowise.authenticatioservice.dto.TokenResponse;
 import com.innowise.authenticatioservice.dto.ValidatedResponse;
 import com.innowise.authenticatioservice.service.AuthService;
-import com.innowise.authenticatioservice.swagger.AuthControllerSwagger;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
-public class AuthController implements AuthControllerSwagger {
+public class AuthController {
 
     private final AuthService authService;
 
